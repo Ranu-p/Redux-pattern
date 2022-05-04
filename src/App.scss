@@ -1,0 +1,111 @@
+ @import "./sass/main.scss"; 
+ @import "./sass/dark-light-theme.scss";
+
+@import "./sass/dark-light-theme.scss";
+
+ @import "./subscribers/components/landing-page/home";
+
+ @import "./subscribers/components/search/search";
+ 
+
+.App {
+  text-align: center;
+  
+  height: 100vh;
+
+  &-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  &-link {
+    color: #61dafb;
+  }
+}
+#root {
+  height: 100vh;
+    display: flex;
+}
+
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App {
+    &-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =================== Switch CSS ======================= */
+
+// .MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+//   background-color: #000 !important;
+// }
+
+// .MuiSwitch-colorPrimary.Mui-checked {
+//   color: #fff !important;
+// }
+
+/* =================== Register/Signup Page ======================= */
+
+.paper {
+  width: 60% !important;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-card {
+  width: 50% !important;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ========================== image Upload================================= */
+
+label {
+  &.image-preview {
+    border: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    margin: 10px 0px;
+    border-radius: 50%;
+
+    & img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
+
+.hideLanding{
+  display: none!important;
+}
+
+.comingSoon{
+  text-align: center;
+  padding: 12% 0%;
+}
+
+
